@@ -20,7 +20,6 @@ before_script:
 - sudo minikube start --vm-driver=none --kubernetes-version=v1.16.0
 - "sudo chown -R travis: /home/travis/.minikube/"
 
-script:
 # Following is just to demo that the kubernetes cluster works.
 - kubectl cluster-info
 # Verify kube-addon-manager.
